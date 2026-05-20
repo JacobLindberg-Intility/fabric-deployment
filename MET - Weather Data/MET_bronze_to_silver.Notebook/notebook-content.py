@@ -88,7 +88,7 @@ historical_temp_df = (
         F.explode("properties.timeseries").alias("ts")
     )
     .select(
-        F.to_timestamp("ts.time").alias("time"),
+        F.lit(process_time).cast("timestamp").alias("time"),
         F.col("ts.data.instant.details.air_temperature").alias("temperature")
     )
     .orderBy("time")

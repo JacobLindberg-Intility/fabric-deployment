@@ -6,10 +6,10 @@
       "jobType": "Execute",
       "configuration": {
         "type": "Cron",
-        "startDateTime": "2026-05-20T14:05:00",
-        "endDateTime": "2027-05-20T15:54:00",
+        "startDateTime": "2026-05-20T14:30:00",
+        "endDateTime": "2027-05-20T16:19:00",
         "localTimeZoneId": "UTC",
-        "interval": 1
+        "interval": 60
       }
     }
   ]
