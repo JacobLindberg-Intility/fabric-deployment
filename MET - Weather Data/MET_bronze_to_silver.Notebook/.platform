@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Notebook",
-    "displayName": "Ingest_MET_to_bronze"
+    "displayName": "MET_bronze_to_silver"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "7f808bb2-1247-99e8-450c-434808250984"
+    "logicalId": "67083579-b0f4-955c-4718-3d00f7dcb093"
   }
 }

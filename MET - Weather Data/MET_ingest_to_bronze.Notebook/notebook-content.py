@@ -22,25 +22,11 @@
 
 # CELL ********************
 
-# Welcome to your new notebook
-# Type here in the cell editor to add code!
 import requests
 import json
 import os
 import re
 from datetime import datetime, timezone
-
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
-
 place = "Oslo"
 
 headers = {
@@ -69,7 +55,8 @@ folder_path = (
     f"place={safe_place}/"
     f"year={now:%Y}/"
     f"month={now:%m}/"
-    f"day={now:%d}"
+    f"day={now:%d}/"
+    f"hour={now:%H}"
 )
 
 file_name = f"{safe_place}_weather_{now:%Y%m%d_%H%M%S}.json"
